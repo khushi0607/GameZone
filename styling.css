@@ -1,0 +1,42 @@
+body{
+    padding:0px;
+    margin:0px;
+    border: 0px;
+    border-style:solid;
+    border-width: 5px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color:white;
+}
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+    padding:0px;
+    margin:0px;
+    border: 0px;
+    
+}
+
+.heading{
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    font-size: 80px;
+    font-family:'Times New Roman', 'Times', 'serif';
+}
+.items{
+    position: absolute;
+    top: 30%;
+    left:10%;
+    font-size: 30px;
+    margin: 0ch;
+}
+.btn{
+    position: absolute;
+	bottom:15%;
+	left: 55%; 
+	border-radius: 20px;
+	width: fit-content;
+	padding:1rem ;
+}

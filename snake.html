@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Snake Game</title>
+        <style>
+            canvas{
+                display: block;
+                margin: 0 auto;
+               
+            }
+            body{
+                background-color: #1ab62f;
+                padding:0px;
+                margin:0px;
+                border-style: dashed;
+                border-width: 9px;
+                border-left-width: 10px;
+                border-right-width: 10px;
+                border-color: rgb(10, 8, 8);
+            }
+            .heading{
+                position: absolute;
+                top: 0px;
+                left: 45%;
+                font-size: 60px;
+                font-family:'Times New Roman', Times, serif;
+            }
+            #snake{
+                position: absolute;
+                top: 120px;
+                left: 30%;  
+            }
+            .link{
+                position: absolute;
+                bottom:15%;
+                right: 15%; 
+                border-radius: 10px;
+                padding:1rem;
+               background-color:chartreuse;
+            }
+            .restart{
+                position: absolute;
+                bottom:25%;
+                right: 17%; 
+                border-radius: 10px;
+                padding:1rem;
+                background-color:chartreuse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="heading"><b><i><u>Snake</u></i></b></h1>
+        <canvas id="snake" width="608" height="608"></canvas>
+        <script src="snake.js"></script>
+        <button class="link">
+        <a href="gameZone.html"><b>Home_Page</b></a>
+    </button>
+    <button class="restart">
+        <a href="snake.html"><b>Restart</b></a>
+    </button>
+    </body>
+    
+</html>

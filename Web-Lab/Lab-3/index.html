@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 align="center">BOM Navigator</h1>
+    <p id="Cookies"></p>
+    <p id="applicationName"></p>
+    <p id="codeName"></p>
+    <p id="Engine"></p>
+    <p id="Version"></p>
+    <p id="Agent"></p>
+    <p id="platform"></p>
+    <p id="language"></p>
+    <p id="java"></p>
+</body>
+<script>
+    document.getElementById("Cookies").innerHTML = "cookiesEnabled is " + navigator.cookieEnabled;
+    document.getElementById("applicationName").innerHTML = "navigator.appName is " + navigator.appName;
+    document.getElementById("codeName").innerHTML = "navigator.appCodeName is " + navigator.appCodeName;
+    document.getElementById("Engine").innerHTML ="navigator.product is " + navigator.product;
+    document.getElementById("Version").innerHTML = navigator.appVersion;
+    document.getElementById("Agent").innerHTML = navigator.userAgent;
+    document.getElementById("platform").innerHTML = navigator.platform;
+    document.getElementById("language").innerHTML = navigator.language;
+    document.getElementById("java").innerHTML = navigator.onLine;
+</script>
+
+</html>

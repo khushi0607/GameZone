@@ -1,0 +1,277 @@
+* {                        
+  box-sizing: border-box;       /*  outlet of box  */ 
+  margin: 0;
+  padding: 0;
+}
+body                            /giving configuration of box/
+{
+  color: #545454;
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+  background-color: #545454;
+  border-style: double;
+  border-width: 9px;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-color: wheat;
+}
+
+.container {                       /*container is a class used to style headers */
+  background: #14BDAC;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 25px;
+}
+
+.title {                            /text alignment will be in center/
+  text-align: center;               
+}
+
+.title span {                       /* it is used to color the title*/
+  color: #F2EBD3;
+}
+
+.status-action {
+  display: flex;
+  margin-top: 25px;
+  font-size: 25px;
+  justify-content: space-around;
+  height: 30px;
+}
+
+.status span {
+  color: #F2EBD3;
+}
+
+.reset {
+  cursor: pointer;
+}
+
+.reset:hover {                     /* it is selector used to select elements when you mouse over them*/
+  color: #F2EBD3;
+}
+
+.game-grid {                       /* creates grid and dimension */
+  background: #0DA192;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 50px;
+}
+
+.game-cell {                       /* creates shell and dimension*/
+  background: #14BDAC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+}
+
+.x,
+.o {
+  cursor: default;
+}
+
+.x::after {
+  content: '×';
+  font-size: 200px;
+}
+
+.o::after {
+  content: '○';
+  color: #F2EBD3;
+  font-size: 225px;
+}
+
+.won::after {
+  color: #BD022F;
+}
+
+@media only screen and (max-width: 1024px) {
+  .game-grid {
+    margin-top: 25px;
+    grid-gap: 10px;
+  }
+
+  .game-cell {
+    height: 150px;
+    width: 150px;
+  }
+
+  .x::after {
+    font-size: 150px;
+  }
+
+  .o::after {
+    font-size: 175px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .container {
+    margin: 25px;
+    padding: 25px;
+  }
+
+  .game-cell {
+    height: 100px;
+    width: 100px;
+  }
+
+  .x::after {
+    font-size: 100px;
+  }
+
+  .o::after {
+    font-size: 125px;
+  }
+}* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #545454;
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+  background-color: #545454;
+  border-style: double;
+  border-width: 9px;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-color: wheat;
+}
+
+.container {
+  background: #14BDAC;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 25px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title span {
+  color: #F2EBD3;
+}
+
+.status-action {
+  display: flex;
+  margin-top: 25px;
+  font-size: 25px;
+  justify-content: space-around;
+  height: 30px;
+}
+
+.status span {
+  color: #F2EBD3;
+}
+
+.reset {
+  cursor: pointer;
+}
+
+.reset:hover {
+  color: #F2EBD3;
+}
+
+.game-grid {
+  background: #0DA192;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 50px;
+}
+
+.game-cell {
+  background: #14BDAC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+}
+
+.x,
+.o {
+  cursor: default;
+}
+
+.x::after {
+  content: '×';
+  font-size: 200px;
+}
+
+.o::after {
+  content: '○';
+  color: #F2EBD3;
+  font-size: 225px;
+}
+
+.won::after {
+  color: #BD022F;
+}
+
+@media only screen and (max-width: 1024px) {
+  .game-grid {
+    margin-top: 25px;
+    grid-gap: 10px;
+  }
+
+  .game-cell {
+    height: 150px;
+    width: 150px;
+  }
+
+  .x::after {
+    font-size: 150px;
+  }
+
+  .o::after {
+    font-size: 175px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .container {
+    margin: 25px;
+    padding: 25px;
+  }
+
+  .game-cell {
+    height: 100px;
+    width: 100px;
+  }
+
+  .x::after {
+    font-size: 100px;
+  }
+
+  .o::after {
+    font-size: 125px;
+  }
+}
+.link{
+  position: absolute;
+  bottom:15%;
+  right: 15%; 
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor:pointer;
+  outline:none;
+  border:#2f3542;
+  text-decoration:none;
+  margin-top: 10px;
+  color:#eb4d4b;
+}
